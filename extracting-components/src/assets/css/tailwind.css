@@ -22,7 +22,7 @@
 }
 
 .btn-gray {
-    @apply bg-gray-500 text-black
+    @apply bg-gray-500 text-black;
 }
 
 .btn-gray:hover  {
@@ -31,6 +31,14 @@
 
 .btn-gray:active  {
     @apply bg-gray-600;
+}
+
+.btn-brand-blue {
+    @apply bg-brand-blue-200;
+}
+
+.btn-brand-blue:hover {
+    @apply  bg-brand-blue-100
 }
 
 @tailwind utilities;
