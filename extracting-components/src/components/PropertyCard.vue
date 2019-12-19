@@ -1,6 +1,10 @@
 <template>
     <div class="antialiased text-gray-900 bg-white border rounded-lg overflow-hidden">
-        <img :src="property.imageUrl" :alt="property.imageAlt">
+        <!-- the following div can be used instead of the image tag if you had to suuport ie-11 -->
+        <!-- <div class="h-48 bg-cover bg-center"
+             :style="{backgroundImage: `url('${property.imageUrl}')`}">
+        </div> -->
+        <img :src="property.imageUrl" class="h-48 w-full object-cover" :alt="property.imageAlt">
         <div class="p-6">
             <div class="flex items-baseline">
                 <Badge uppercase>New</Badge>
