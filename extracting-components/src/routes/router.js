@@ -4,6 +4,7 @@ const HelloWorld = () => import('@/components/HelloWorld.vue');
 const DestinationCardBoard = () => import("@/views/storyboard/destination-card-board.vue");
 const PropertyCardBoard = () => import("@/views/storyboard/property-card-board.vue");
 const StarRatingBoard = () => import("@/views/storyboard/star-rating-board.vue")
+const BadgeBoard =  () => import("@/views/storyboard/badge-board.vue")
 
 const routes = [
     {
@@ -29,6 +30,10 @@ const routes = [
             {
                 path: 'starratingcard',
                 component: StarRatingBoard
+            },
+            {
+                path: 'badgeboard',
+                component: BadgeBoard
             }
         ]
     }

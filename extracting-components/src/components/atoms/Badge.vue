@@ -17,7 +17,7 @@ export default {
         },
         uppercase: {
             type: Boolean,
-            default: true
+            default: false
         }
     },
     computed: {
