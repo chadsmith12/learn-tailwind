@@ -14,9 +14,18 @@
             </div>
         </div>
         <div class="px-2 pt-3 pb-4 sm:flex sm:p-0" :class="isOpen ? 'block' : 'hidden'">
-            <a href="#" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800">List your property</a>
-            <a href="#" class="mt-1  block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800s sm:mt-0 sm:ml-2">Trips</a>
-            <a href="#" class="mt-1  block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Messages</a>
+            <router-link to="/storyboard/destinationcard" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800">
+                Destination Card
+            </router-link>
+            <router-link to="/storyboard/propertycard" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800s sm:mt-0 sm:ml-2">
+                Property Card
+            </router-link>
+            <router-link to="/storyboard/starratingcard" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">
+                Star Rating
+            </router-link>
+            <router-link to="/storyboard/badgeboard" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">
+                Badge
+            </router-link>
         </div>
     </header>
 </template>
