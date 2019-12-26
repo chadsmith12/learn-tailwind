@@ -13,23 +13,36 @@
                 </button>
             </div>
         </div>
-        <nav class="px-2 pt-3 pb-4 sm:flex sm:p-0" :class="isOpen ? 'block' : 'hidden'">
-            <router-link to="/storyboard/destinationcard" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800">
-                Destination Card
-            </router-link>
-            <router-link to="/storyboard/propertycard" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800s sm:mt-0 sm:ml-2">
-                Property Card
-            </router-link>
-            <router-link to="/storyboard/starratingcard" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">
-                Star Rating
-            </router-link>
-            <router-link to="/storyboard/badgeboard" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">
-                Badge
-            </router-link>
-            <router-link to="/storyboard/dropdownmenu" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">
-                Dropdown Menu
-            </router-link>
-            <DropdownMenu class="ml-6"/>
+        <nav :class="isOpen ? 'block' : 'hidden'" class="sm:block">
+            <div class="px-2 pt-3 pb-4 sm:flex sm:p-0">
+                <router-link to="/storyboard/destinationcard" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800">
+                    Destination Card
+                </router-link>
+                <router-link to="/storyboard/propertycard" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800s sm:mt-0 sm:ml-2">
+                    Property Card
+                </router-link>
+                <router-link to="/storyboard/starratingcard" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">
+                    Star Rating
+                </router-link>
+                <router-link to="/storyboard/badgeboard" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">
+                    Badge
+                </router-link>
+                <router-link to="/storyboard/dropdownmenu" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">
+                    Dropdown Menu
+                </router-link>
+                <DropdownMenu class="hidden sm:ml-6 sm:block"/>
+            </div>
+            <div class="px-4 py-5 border-t border-gray-800 sm:hidden">
+                <div class="flex items-center">
+                    <img class="h-8 w-8 rounded-full object-cover border-2 border-gray-600 " src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80" alt="Avatar"/>
+                    <span class="ml-3 font-semibold text-white">Jane Doe</span>
+                </div>
+                <div class="mt-3">
+                    <a href="#" class="block text-gray-400 hover:text-white">Account Settings</a>
+                    <a href="#" class="mt-2 block text-gray-400 hover:text-white">Support</a>
+                    <a href="#" class="mt-2 block text-gray-400 hover:text-white">Logout</a>
+                </div>
+            </div>
         </nav>
     </header>
 </template>
