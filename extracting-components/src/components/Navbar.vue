@@ -13,7 +13,7 @@
                 </button>
             </div>
         </div>
-        <div class="px-2 pt-3 pb-4 sm:flex sm:p-0" :class="isOpen ? 'block' : 'hidden'">
+        <nav class="px-2 pt-3 pb-4 sm:flex sm:p-0" :class="isOpen ? 'block' : 'hidden'">
             <router-link to="/storyboard/destinationcard" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800">
                 Destination Card
             </router-link>
@@ -29,12 +29,18 @@
             <router-link to="/storyboard/dropdownmenu" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">
                 Dropdown Menu
             </router-link>
-        </div>
+            <DropdownMenu class="ml-6"/>
+        </nav>
     </header>
 </template>
 
 <script>
+import DropdownMenu from "@/components/DropdownMenu.vue";
+
 export default {
+    components: {
+        DropdownMenu
+    },
     data() {
         return {
             isOpen: false
