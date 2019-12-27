@@ -149,6 +149,21 @@
               </span>
             </a>
           </div>
+          <h2 class="mt-8 text-xs font-semibold text-gray-600 uppercase tracking-wide">Folders</h2>
+          <div class="mt-4">
+            <a
+              href="#"
+              class="-mx-3 px-3 py-2 block text-sm font-medium text-gray-700 hover:bg-gray-200 rounded-lg"
+            >Refends</a>
+            <a
+              href="#"
+              class="mt-2 -mx-3 px-3 py-2 block text-sm font-medium text-gray-700 hover:bg-gray-200 rounded-lg"
+            >Discounts</a>
+            <a
+              href="#"
+              class="mt-2 -mx-3 px-3 py-2 block text-sm font-medium text-gray-700 hover:bg-gray-200 rounded-lg"
+            >Bugs</a>
+          </div>
         </nav>
       </div>
       <main class="bg-gray-200">
