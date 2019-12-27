@@ -6,6 +6,7 @@ const PropertyCardBoard = () => import("@/views/storyboard/property-card-board.v
 const StarRatingBoard = () => import("@/views/storyboard/star-rating-board.vue");
 const BadgeBoard =  () => import("@/views/storyboard/badge-board.vue");
 const DropdownMenuBoard = () => import("@/views/storyboard/dropdown-menu-board.vue");
+const AlertBoard = () => import("@/views/storyboard/alert-board.vue");
 
 const routes = [
     {
@@ -39,6 +40,10 @@ const routes = [
             {
                 path: 'dropdownmenu',
                 component: DropdownMenuBoard
+            },
+            {
+                path: 'alert',
+                component: AlertBoard
             }
         ]
     }
