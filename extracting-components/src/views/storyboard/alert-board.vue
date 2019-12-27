@@ -1,9 +1,11 @@
 <template>
 <div>
     <div class="py-3">
-        <Alert background-color="green-600"
+        <Alert v-model="showAlert" 
+               background-color="green-600"
                text-color="gray-200"
-               :shadow="shadow">
+               :shadow="shadow"
+               :rounded="rounded">
             <template v-if="showBadge" v-slot:badge>
                 <Badge uppercase>New</Badge>
             </template>
@@ -26,6 +28,19 @@
             <option value="outline">outline</option>
             <option value="none">none</option>
         </select>
+        <br/>
+        <label>Rounded</label>
+        <select v-model="rounded">
+            <option value="none">none</option>
+            <option value="sm">sm</option>
+            <option value="lg">lg</option>
+            <option value="full">full</option>
+        </select>
+        <br/>
+        <span>
+            <label for="showAlert">Show Alert</label>
+            <input id="showAlert" class="ml-2" type="checkbox" v-model="showAlert"/>
+        </span>
     </div>
 </div>
 
@@ -43,7 +58,9 @@ export default {
     data() {
         return {
             showBadge: true,
-            shadow: 'none'
+            shadow: 'none',
+            rounded: 'full',
+            showAlert: true
         }
     }
 }
