@@ -81,13 +81,6 @@ export default {
                     return `rounded-${this.rounded}`
                 }
             }
-        },
-        isLink: function() {
-            if(!this.to) {
-                return false;
-            }
-
-            return true;
         }
     },
     methods: {
