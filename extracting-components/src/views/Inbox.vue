@@ -166,8 +166,29 @@
           </div>
         </nav>
       </div>
-      <main class="bg-gray-200">
-        <div></div>
+      <main class="flex-1 flex bg-gray-200">
+        <div class="w-full max-w-xs flex-grow">
+          <div class="flex items-center justify-between">
+            <button class="flex items-center text-xs font-semibold text-gray-600">
+              Sorted by Date
+              <svg
+                class="ml-auto h-6 w-6 stroke-current text-gray-400"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                />
+              </svg>
+            </button>
+            <button>
+              <svg class="h-4 w-4 fill-current text-gray-500" viewBox="0 0 20 20">
+                <path
+                  d="M9 16.172l-6.071-6.071-1.414 1.414L10 20l.707-.707 7.778-7.778-1.414-1.414L11 16.172V0H9z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
         <div></div>
       </main>
     </div>
